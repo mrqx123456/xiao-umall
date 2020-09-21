@@ -80,6 +80,18 @@ export default new Router({
             {
                 path:'specs/edit',
                 component:()=>import("@/pages/Specs/Specsadd")
+            },
+            {
+                path:'goods',
+                component:()=>import('@/pages/Goods/Goods')
+            },
+            {
+                path: "goods/add",
+                component: () => import("@/pages/Goods/Goodsadd")
+            },
+            {
+                path:'goods/edit',
+                component:()=>import("@/pages/Goods/Goodsadd")
             }
         ]
     }

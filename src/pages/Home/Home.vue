@@ -17,7 +17,7 @@
             </el-menu-item>
 
             <!-- 标题2 系统设置 -->
-            <el-submenu index="1" v-for="(item,index) in getUser" :key="index">
+            <el-submenu :index="index.toString()" v-for="(item,index) in getUser" :key="index">
                 <template slot="title">
                     <i class="el-icon-location"></i>
                     <span>{{item.title}}</span>

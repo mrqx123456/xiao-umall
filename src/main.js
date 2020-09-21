@@ -16,6 +16,14 @@ import './filters/statusFormat.js'
 import './filters/typeFormat.js'
 // 角色过滤器
 import './filters/roleFormat.js'
+
+// 新品过滤器
+import './filters/isnewFormat.js'
+
+// 热卖过滤器
+import './filters/ishotFormat.js'
+
+
 Vue.prototype.$http = http
 Vue.use(ElementUI);
 Vue.config.productionTip = false
