@@ -70,7 +70,7 @@ export default {
     methods: {
         getList () {
             this.$http.get("/catelist", { istree: true }).then(res => {
-                console.log(res)
+               
                 this.tableData = res.data.list
             })
         },
@@ -79,7 +79,7 @@ export default {
             this.$router.push('/home/category/edit?id='+row.id)
         },
         handleDelete (index, row) {
-            console.log(index, row);
+
         },
         goAdd () { 
             this.$router.push("/home/category/add")
